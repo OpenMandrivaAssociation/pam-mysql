@@ -1,8 +1,8 @@
-%define name	pam-mysql
+%define name	pam_mysql
 %define url	http://sourceforge.net/projects/pam-mysql/
 %define version 0.5
 %define prefix	%{_prefix}
-%define release 5mdk
+%define release %mkrel 6
 
 Summary:	MySQL authentication for PAM
 Name:		%{name}
@@ -24,7 +24,7 @@ interrogate.
 
 %prep
 
-%setup -q -n pam_mysql
+%setup -q -n %{name}
 
 %build
 
@@ -33,10 +33,10 @@ interrogate.
 %install
 mkdir -p $RPM_BUILD_ROOT/lib/security
 cp pam_mysql.so $RPM_BUILD_ROOT/lib/security
-mkdir -p $RPM_BUILD_ROOT/usr/share/doc/pam-mysql-%{version}
-cp Changelog $RPM_BUILD_ROOT/usr/share/doc/pam-mysql-%{version}
-cp CREDITS $RPM_BUILD_ROOT/usr/share/doc/pam-mysql-%{version}
-cp Readme $RPM_BUILD_ROOT/usr/share/doc/pam-mysql-%{version}
+mkdir -p $RPM_BUILD_ROOT/usr/share/doc/%{name}-%{version}
+cp Changelog $RPM_BUILD_ROOT/usr/share/doc/%{name}-%{version}
+cp CREDITS $RPM_BUILD_ROOT/usr/share/doc/%{name}-%{version}
+cp Readme $RPM_BUILD_ROOT/usr/share/doc/%{name}-%{version}
 
 %clean
 rm -rf %buildroot
