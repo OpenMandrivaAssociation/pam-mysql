@@ -14,7 +14,6 @@ URL:		http://sourceforge.net/projects/pam-mysql/
 Source:		%{url}/pam_mysql-%{version}.tar.bz2
 Requires:	pam
 BuildRequires:	pam-devel, MySQL-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 This is a module that allows people to login to PAM-aware applications by
