@@ -2,7 +2,7 @@
 %define url	http://sourceforge.net/projects/pam-mysql/
 %define version 0.5
 %define prefix	%{_prefix}
-%define release 5mdk
+%define release 6mdk
 
 Summary:	MySQL authentication for PAM
 Name:		%{name}
