@@ -10,7 +10,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL
 Group:		System/Libraries
-URL:		http://sourceforge.net/projects/pam-mysql/
+URL:		https://sourceforge.net/projects/pam-mysql/
 Source0:	%{url}/pam_mysql-%{version}.tar.bz2
 Requires:	pam
 BuildRequires:	pam-devel, mysql-devel
