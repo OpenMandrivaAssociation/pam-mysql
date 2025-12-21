@@ -13,6 +13,7 @@ Group:		System/Libraries
 URL:		https://sourceforge.net/projects/pam-mysql/
 Source0:	%{url}/pam_mysql-%{version}.tar.bz2
 Requires:	pam
+BuildRequires:	make
 BuildRequires:	pam-devel, mysql-devel
 
 %description
